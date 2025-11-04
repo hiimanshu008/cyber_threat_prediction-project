@@ -2,8 +2,6 @@
 
 - Java Spring Boot service that ingests network logs (Kafka or REST), enriches with VirusTotal + Gemini, scores risk, and persists results in MongoDB.
 
-See also: [WORKFLOWS.md](./WORKFLOWS.md) for detailed workflows and tooling rationale.
-
 ## Prerequisites
 - Java 17+
 - Maven 3.9+
