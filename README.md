@@ -34,7 +34,7 @@
 
 ## Configuration Notes
 - App reads configuration from environment variables with sensible defaults. See `src/main/resources/application.properties` for the full list of keys.
-- Kafka topic used by the consumer defaults to `topic_0` (`APP_KAFKA_TOPIC`).
+- Kafka topic used by the consumer defaults to (`APP_KAFKA_TOPIC`).
 - Secrets like `VIRUSTOTAL_API_KEY` and `GEMINI_API_KEY` should be provided via environment variables (avoid committing secrets).
 
 ## Primary Endpoints
@@ -96,6 +96,6 @@ kafka-console-producer \
 - Logging defaults to INFO (set DEBUG selectively in `application.properties`).
 
 ## Common Issues
-- Kafka auth/SSL: verify bootstrap server, API key/secret in properties, and topic `topic_0` exists.
-- MongoDB Atlas: ensure your IP is allowlisted and user has access to DB `cybersec`.
+- Kafka auth/SSL: verify bootstrap server, API key/secret in properties, and topic exists.
+- MongoDB Atlas: ensure your IP is allowlisted and user has access to DB.
 - VirusTotal/Gemini: ensure API keys are active. If invalid, VT score returns 0 and AI content may be empty.
